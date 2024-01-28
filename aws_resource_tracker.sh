@@ -23,7 +23,7 @@ aws s3 ls > resourceTracker
 
 # List EC2 Instaces
 echo "Print list of buckets "
-aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId' >> resourc>
+aws ec2 describe-instances | jq '.Reservations[].Instances[].InstanceId' >> resourceTracker
 
 #List Lambda
 echo "Print list of lambda functions :"
